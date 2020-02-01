@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
                 Container(
                   padding: const EdgeInsets.only(bottom: 8),
                   child: Text(
-                    'Oeschinen Lake Campground',
+                    'Oeschinen Lakesssssssss Campground',
                     style: TextStyle(
                       fontWeight: FontWeight.bold,
                     ),
