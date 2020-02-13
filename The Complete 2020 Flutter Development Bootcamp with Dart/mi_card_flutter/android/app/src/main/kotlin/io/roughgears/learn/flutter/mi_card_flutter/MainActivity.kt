@@ -1,4 +1,4 @@
-package co.appbrewery.mi_card_flutter
+package io.roughgears.learn.flutter.mi_card_flutter
 
 import androidx.annotation.NonNull;
 import io.flutter.embedding.android.FlutterActivity
