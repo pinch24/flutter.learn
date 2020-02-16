@@ -1,8 +1,8 @@
 # mi_card_flutter
-
 Mi Card Flutter App
 
 ## Reference
+https://github.com/londonappbrewery/Flutter-Course-Resources
 
 Fonts
 https://fonts.google.com/
