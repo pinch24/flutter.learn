@@ -14,28 +14,82 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.teal,
           body: SafeArea(
             child: Column(
-              crossAxisAlignment: CrossAxisAlignment.stretch,
+              mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                Container(
-                  height: 100.0,
-                  color: Colors.white,
-                  child: Text('Container 1'),
+                CircleAvatar(
+                  radius: 50.0,
+                  backgroundImage: AssetImage('images/william-of-ockham.jpg'),
+                ),
+                Text(
+                  'William of Ockham',
+                  style: TextStyle(
+                    fontFamily: 'Pacifico',
+                    fontWeight: FontWeight.bold,
+                    fontSize: 32.0,
+                    color: Colors.white,
+                  ),
+                ),
+                Text(
+                  'Developer',
+                  style: TextStyle(
+                    fontFamily: 'Source Sans Pro',
+                    fontWeight: FontWeight.bold,
+                    fontSize: 24.0,
+                    color: Colors.teal.shade100,
+                    letterSpacing: 2.4,
+                  ),
                 ),
                 SizedBox(
                   height: 20.0,
+                  width: 200.0,
+                  child: Divider(
+                    color: Colors.teal.shade100,
+                  ),
                 ),
                 Container(
-                  height: 100.0,
-                  color: Colors.blue,
-                  child: Text('Container 2'),
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  padding: EdgeInsets.all(10.0),
+                  child: Row(
+                    children: <Widget>[
+                      Icon(
+                        Icons.phone,
+                        color: Colors.teal.shade900,
+                      ),
+                      SizedBox(
+                        width: 10.0,
+                      ),
+                      Text(
+                        '+82 10-2345-6789',
+                        style: TextStyle(
+                          color: Colors.teal.shade900,
+                          fontFamily: 'Source Sans Pro',
+                          fontSize: 20.0,
+                        ),
+                      )
+                    ],
+                  ),
                 ),
-                Container(
-                  height: 100.0,
-                  color: Colors.red,
-                  child: Text('Container 3'),
+                Card(
+                  color: Colors.white,
+                  margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
+                  child: ListTile(
+                    leading: Icon(
+                      Icons.email,
+                      color: Colors.teal,
+                    ),
+                    title: Text(
+                      'alpha@beta.gamma',
+                      style: TextStyle(
+                        fontSize: 20.0,
+                        color: Colors.teal.shade900,
+                        fontFamily: 'Source Sans Pro'
+                      ),
+                    ),
+                  ),
                 ),
               ],
-            ),
+            )
           )
       ),
     );
